@@ -2,8 +2,16 @@
     border: 1px solid black;
 }
 .todayInfo .title{
-    background-color: gold;
+    background-color: rgb(4, 214, 109);
     text-align: center;
     font-size: 80px;
     color: white;
+}
+.boarder{
+    border: 1px solid black;
+}
+.skinow{
+    background-color: rgb(56, 238, 150);
+    color:white;
+    text-align: center;
 }

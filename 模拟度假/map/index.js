@@ -24,14 +24,3 @@ layui.use('element', function(){
     
     //…
 });
-
-function randomInt(a,b){if(a>b){var c = a;a = b;b = c; }return Math.floor(Math.random() * (b - a + 1) + a); }
-
-window.onload = function(){
-    var skinowInfo1 = document.getElementById("skinowInfo1");
-    var skinowInfo2 = document.getElementById("skinowInfo2");
-    var skinowInfo3 = document.getElementById("skinowInfo3");
-    skinowInfo1.innerText = `温度:${String(randomInt(-20, 5))}`;
-    skinowInfo2.innerText = "状态:开放";
-    skinowInfo3.innerText = `人数:${String(randomInt(400, 5000))}`;
-}

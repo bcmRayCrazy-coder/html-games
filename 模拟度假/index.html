@@ -11,14 +11,25 @@
 <body>
     <script src="./layui/src/layui.js"></script>
     <script src="./mdui-master/dist/js/mdui.js"></script>
+    <script src="./index.js"></script>
 
-    <ul class="layui-nav">
-        <li class="layui-nav-item layui-this"></li>
+    <ul class="layui-nav layui-bg-green">
+        <li class="layui-nav-item layui-this"><a href="./index.html">主页</a></li>
+        <li class="layui-nav-item"><a href="./map/index.html">地图</a></li>
     </ul>
 
-    <div class="todayInfo">
+    <div class="todayInfo layui-col-space5">
         <div class="layui-col-xs6 layui-col-md12">
-            <div class="grid-demo grid-demo-bg2 title">今日状况</div>
+            <div class="grid-demo grid-demo-bg2 title boarder">今日状况</div>
+        </div>
+        <div class="layui-col-md4">
+            <div class="skinow boarder">
+                <h2>现在的滑雪场</h2>
+                <div class="mdui-divider-inset-light"></div>
+                <h5 id="skinowInfo1">123</h5>
+                <h5 id="skinowInfo2">abc</h5>
+                <h5 id="skinowInfo3">!@#</h5>
+            </div>
         </div>
     </div>
     
