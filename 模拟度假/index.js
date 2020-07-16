@@ -25,6 +25,19 @@ layui.use('element', function(){
     //…
 });
 
+//轮播导入
+layui.use('carousel', function(){
+    var carousel = layui.carousel;
+    //建造实例
+    carousel.render({
+      elem: '#carousel'
+      ,width: '100%' //设置容器宽度
+      ,arrow: 'always' //始终显示箭头
+      ,anim: 'default' //切换动画方式
+      ,interval: 2000 //切换间隔时间
+    });
+  });
+
 function randomInt(a,b){if(a>b){var c = a;a = b;b = c; }return Math.floor(Math.random() * (b - a + 1) + a); }
 
 window.onload = function(){
@@ -34,4 +47,10 @@ window.onload = function(){
     skinowInfo1.innerText = `温度:${String(randomInt(-20, 5))}`;
     skinowInfo2.innerText = "状态:开放";
     skinowInfo3.innerText = `人数:${String(randomInt(400, 5000))}`;
+    var hotelInfo1 = document.getElementById("hotelInfo1");
+    var hotelInfo2 = document.getElementById("hotelInfo2");
+    var hotelInfo3 = document.getElementById("hotelInfo3");
+    hotelInfo1.innerText = `价格:23000RMB`;
+    hotelInfo2.innerText = "状态:开放";
+    hotelInfo3.innerText = `房间剩余:${String(5100 - randomInt(4000, 5000))}`;
 }

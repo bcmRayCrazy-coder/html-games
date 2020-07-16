@@ -21,6 +21,4 @@ function getCookie(objName) {//获取指定名称的cookie的值
 //element导入
 layui.use('element', function(){
     var element = layui.element;
-    
-    //…
 });
