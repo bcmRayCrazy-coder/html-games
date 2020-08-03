@@ -15,6 +15,10 @@
     color:white;
     text-align: center;
 }
+.dataToday{
+    background-color: rgb(0, 204, 105);
+    color:white;
+}
 .hotel{
     background-color: rgb(56, 238, 150);
     color:white;

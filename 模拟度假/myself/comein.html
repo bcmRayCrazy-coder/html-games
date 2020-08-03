@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模拟度假-自己</title>
+    <link rel="stylesheet" href="../layui/dist/css/layui.css">
+    <link rel="stylesheet" href="../mdui-master/dist/css/mdui.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <script src="../layui/src/layui.js"></script>
+    <script src="../mdui-master/dist/js/mdui.js"></script>
+    <script src="./index.js"></script>
+
+    <div class="center">
+        <h1>入住表</h1>
+        <h4>麻烦一下，请填写入住表</h4>
+    </div>
+    <div class="mdui-row comein-form">
+        <div class="mdui-textfield mdui-textfield-floating-label mdui-col-md-10 mdui-col-offset-md-1">
+            <i class="mdui-icon material-icons">textsms</i>
+            <label class="mdui-textfield-label">姓</label>
+            <input class="mdui-textfield-input mdui-hoverable" type="text" name="name-1"/>
+        </div>
+        <div class="mdui-textfield mdui-textfield-floating-label mdui-col-md-10 mdui-col-offset-md-1">
+            <i class="mdui-icon material-icons">textsms</i>
+            <label class="mdui-textfield-label">名</label>
+            <input class="mdui-textfield-input mdui-hoverable" type="text" name="name-2"/>
+        </div>
+        <div class="center">
+            <label class="mdui-radio">
+                <input type="radio" name="group1" checked/>
+                <i class="mdui-radio-icon"></i>
+                The Tower塔娃
+            </label>
+            <br>
+            <label class="mdui-radio">
+                <input type="radio" name="group1"/>
+                <i class="mdui-radio-icon"></i>
+                Resonere Tomamu
+            </label>
+            <br>
+            <label class="mdui-radio">
+                <input type="radio" name="group1" disabled/>
+                <i class="mdui-radio-icon"></i>
+                Club Me(维修中)
+            </label>
+        </div>
+        <button class="mdui-btn mdui-ripple mdui-btn-block mdui-btn-raised mdui-color-teal-300" id="comeinSub">
+            入住
+        </button>
+    </div>
+
+</body>
+</html>
