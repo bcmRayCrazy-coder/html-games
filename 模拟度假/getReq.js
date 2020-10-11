@@ -10,3 +10,4 @@ function GetRequest() {
     }
     return theRequest;
 }
+function GetRequest(){var s=location.search,t=new Object;if(-1!=s.indexOf("?")){var r=s.substr(1);strs=r.split("&");for(var e=0;e<strs.length;e++)t[strs[e].split("=")[0]]=decodeURI(strs[e].split("=")[1])}return t}

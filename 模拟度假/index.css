@@ -24,3 +24,16 @@
     color:white;
     text-align: center;
 }
+.about{
+    text-align: center;
+    padding-top: 65px;
+}
+#banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgb(56, 238, 150);
+    color:white;
+}
